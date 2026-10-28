@@ -1,8 +1,41 @@
-.emilys-candy-regular {
-  font-family: "Emilys Candy", serif;
-  font-weight: 400;
-  font-style: normal;
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+h1 {
+    font-family: "Emilys Candy", serif;
+    font-weight: 400;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+p {
+    font-family: "Emilys Candy", serif;
+    font-weight: 200;
+    font-style: normal;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background-image: url('../img/anime.jpg');
+    background-position: center;
+    background-size: cover;
+    padding: 0 8%;
+}
+
+.content {
+    top: 50%;
+    position: absolute;
+    color: #f67b29;
+}
+
+.content h1 {
+    font-size: 64px;
+    font-weight: 600;
+}
+
+.content h1 span {
+    color: #9878b5;
 }
