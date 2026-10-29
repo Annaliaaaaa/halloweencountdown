@@ -39,3 +39,16 @@ p {
 .content h1 span {
     color: #9878b5;
 }
+
+.lauch-time {
+display: flex;
+}
+
+.lauch-time div {
+flex-basis: 100px;
+}
+
+.lauch-time div p {
+    font-size: 60px;
+    margin-bottom: -14px;
+}
