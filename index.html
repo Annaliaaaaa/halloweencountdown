@@ -20,14 +20,14 @@
             <h1>We're <span>launching</span> soon</h1>
             <div class="launch-time">
                 <div>
-                    <p>
+                    <p id="days">
                         00
                     </p>
                     <span>
                         Days
                     </span>
                 </div>
-                <div>
+                <div id="hours">
                     <p>
                         00
                     </p>
@@ -35,7 +35,7 @@
                         Hours
                     </span>
                 </div>
-                <div>
+                <div id="minutes">
                     <p>
                         00
                     </p>
@@ -43,7 +43,8 @@
                         Minutes
                     </span>
                 </div>
-                <div>
+
+                <div id="seconds">
                     <p>
                         00
                     </p>
@@ -53,8 +54,32 @@
                 </div>
             </div>
         </div>
-        <img src="img/download (4).png" class="4">
+        <img src="img/download (1).png" class="h">
     </div>
+    <script>
+        var countDownDate = new Date("Oct 29, 2026 00:00:00").getTime();
+        var x = setInterval(function () {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var minutes = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            document.getElementById("days").innerHtml = days;
+            document.getElementById("hours").innerHtml = hours;
+            document.getElementById("minutes").innerHtml = minutes;
+            document.getElementById("seconds").innerHtml = seconds;
+
+            if (distance < 0) {
+                document.getElementById("days").innerHtml = "00";
+                document.getElementById("hours").innerHtml = "00";
+                document.getElementById("minutes").innerHtml = "00";
+                document.getElementById("seconds").innerHtml = "00";
+            }
+
+        }, 1000);
+    </script>
 </body>
 
 </html>

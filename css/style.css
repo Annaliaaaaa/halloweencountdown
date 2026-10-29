@@ -9,7 +9,7 @@ h1 {
 
 p {
     font-family: "Emilys Candy", serif;
-    font-weight: 200;
+    font-weight: 300;
     font-style: normal;
     margin: 0;
     padding: 0;
@@ -32,7 +32,7 @@ p {
 }
 
 .content h1 {
-    font-size: 64px;
+    font-size: 136px;
     font-weight: 600;
 }
 
@@ -40,15 +40,34 @@ p {
     color: #9878b5;
 }
 
-.lauch-time {
+.launch-time{
 display: flex;
 }
 
-.lauch-time div {
+.launch-time div{
 flex-basis: 100px;
 }
 
-.lauch-time div p {
+.launch-time div p {
     font-size: 60px;
     margin-bottom: -14px;
+}
+
+.h {
+width: 390px;
+position: absolute;
+right: 10%;
+bottom: 0%;
+animation: h 4s linear infinite;
+}
+
+@keyframes h {
+    0%{
+        bottom: 0;
+        opacity: 0;
+    }
+     100%{
+        bottom: 105%;
+        opacity: 1;
+    }
 }
